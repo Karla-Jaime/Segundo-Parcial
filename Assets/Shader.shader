@@ -11,6 +11,11 @@
 		_NormalAmount("Normal Amount", Range(-1, 1)) = 1
 		_RimColor("Rim Color", Color) = (1, 1, 1, 1)
 		_RimPower("Rim Amount", Range(0.5, 8.0)) = 1
+
+		 _Color ("Color", Color) = (1,1,1,1)
+		_Spec("Specular", Range(0, 1)) = 0.5
+		
+		_SpecColor("SpecColor", Color) = (1, 1, 1, 1)
     }
 
     SubShader
@@ -26,6 +31,10 @@
 		float4 _RimColor;
 		float _RimPower;
 
+		
+        fixed4 _Color;
+		half _Spec;
+	
         float4 LightingToonRamp(SurfaceOutput s, fixed2 lightDir, fixed atten)
         {
             half diff = dot(s.Normal, lightDir);
@@ -52,6 +61,13 @@
 			o.Normal = normal;
 			half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
 			o.Emission = _RimColor.rgb * pow(rim, _RimPower);
+
+			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+            o.Albedo = c.rgb;
+			o.Alpha = c.a;
+			o.Specular = _Spec;
+			
+			
 		}
 
         ENDCG
@@ -103,5 +119,6 @@
 
 			ENDCG
 		}
+		
     }
 }
