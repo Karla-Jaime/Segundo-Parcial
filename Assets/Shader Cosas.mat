@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Escenario
-  m_Shader: {fileID: 4800000, guid: 3fa8001bf67e60847b83c1e615158ac7, type: 3}
+  m_Name: Shader Cosas
+  m_Shader: {fileID: 4800000, guid: cafd9017612a0ce4ea7a5977de11b688, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpTex:
-        m_Texture: {fileID: 2800000, guid: d020a3b4601a0494fa15a23fbc6d5d49, type: 3}
+        m_Texture: {fileID: 2800000, guid: f7e89876f4bf8c647abb7c336d147670, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 063fc64c8482bb24c894e372d1aa5868, type: 3}
+        m_Texture: {fileID: 2800000, guid: d51242d62f3a3f0468854e37fc634ac0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RampTex:
-        m_Texture: {fileID: 2800000, guid: 85d445cdb43e3324bb6e3ab0d68aeb0b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8c0e4561058fd6f4d80c4e37e5e07abd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -69,17 +69,17 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.61
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _NormalAmount: 0.3
+    - _NormalAmount: 1
     - _OcclusionStrength: 1
-    - _OutlineSize: 0
+    - _OutlineSize: 0.05
     - _Parallax: 0.02
-    - _RimPower: 0.5
+    - _RimPower: 1
     - _SmoothnessTextureChannel: 0
-    - _Spec: 0.51
+    - _Spec: 0.5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
@@ -89,5 +89,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.3773585, g: 0.2819349, b: 0.20825917, a: 1}
-    - _SpecColor: {r: 0.6132076, g: 0.46485052, b: 0.32106623, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
