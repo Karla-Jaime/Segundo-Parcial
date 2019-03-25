@@ -78,7 +78,7 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineSize: 0
     - _Parallax: 0.02
-    - _RimPower: 1.2
+    - _RimPower: 0.5
     - _Shininess: 20
     - _SmoothnessTextureChannel: 0
     - _Spec: 0.45
@@ -92,4 +92,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _RimColor: {r: 0.31132078, g: 0.2563798, b: 0.18943575, a: 1}
-    - _SpecColor: {r: 1, g: 0.73832715, b: 0.4292453, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
