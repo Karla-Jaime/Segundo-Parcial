@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TFSky
-  m_Shader: {fileID: 4800000, guid: 3fa8001bf67e60847b83c1e615158ac7, type: 3}
+  m_Shader: {fileID: 4800000, guid: cafd9017612a0ce4ea7a5977de11b688, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,7 +73,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.26
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0

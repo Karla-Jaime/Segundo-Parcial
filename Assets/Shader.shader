@@ -20,6 +20,7 @@
 
     SubShader
     {
+		Tags { "RenderType" = "Opaque"}
         CGPROGRAM
         #pragma surface surf ToonRamp
         
